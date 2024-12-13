@@ -1,0 +1,399 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@media only screen and (max-width:425px) {
+    .header {
+        width: 100vh;
+    }
+    .middleSide{
+        padding: 10px 5%;
+    }
+    .home-section{
+        padding: 20px 5%;
+    }
+    .home-section .home-image img{
+        width: 50vh;
+    }
+    .home-section .home-text{
+        width: 50vh;
+    }
+    .home-section .home-text h3{
+        font-size: 20px;
+    }
+    .fade-in-text {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:768px){
+    .header {
+        width: 100vh;
+    }
+    .middleSide{
+        padding: 10px 5%;
+    }
+    .home-section .home-image img{
+        width: 50vh;
+    }
+    .home-section .home-text{
+        width: 50vh;
+    }
+    .home-section .home-text h3{
+        font-size: 20px;
+    }
+    .fade-in-text {
+        font-size: 0px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.header h1{
+    color: #333;
+    padding: 5px;
+}
+.header li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.header li a{
+    text-decoration: none;
+    color: #333;
+}
+.header li a:hover{
+    color: #23cce8;
+    transition: 0.4s;
+}
+.header li :not(a:hover){
+    color: #333;
+    transition: 0.4s;
+}
+.header li:last-child{
+    margin-right: 0;
+}
+.header .rightSide i{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+.header .rightSide i:hover{
+    color: #23cce8;
+    transition: 0.4s;
+}
+.header .rightSide i:not(:hover){
+    color: #333;
+    transition: 0.4s;
+}
+.header .rightSide button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.middleSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+}
+.home-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.home-section .home-text{
+    width: 100%;
+    padding: 50px;
+    font-size: 50px;
+}
+.home-section .home-text h3{
+    font-size: 40px;
+    color: #23cce8;
+    max-width:max-content;
+}
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px;
+    animation: fadeIn 3s;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 10px;
+}
+.container .drug-desc{
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .drug-desc li{
+    list-style:lower-roman;
+}
+.container hr{
+    width:100px;
+    border: 1px solid #333;
+    rotate: 90deg;
+}
+.drug-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.toggle-button{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    background-color: #fff;
+    border: #fff;
+    font-weight: 700;
+}
+.toggle-button:hover{
+    color: #23cce8;
+    transition: 0.4s;
+}
+.toggle-button:not(:hover){
+    color: #333;
+    transition: 0.4s;
+}
+
+.list-items {
+    max-height: 0; /* Start with the list hidden */
+    overflow: hidden; /* Hide overflowing content */
+    opacity: 0; /* Make it invisible */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+}
+
+.list-items.show{
+    max-height: 500px; /* Large enough to fit all items */
+    opacity: 1; /* Fully visible */
+}
+.p-item-1 {
+    max-height: 0; /* Start with the list hidden */
+    overflow: hidden; /* Hide overflowing content */
+    opacity: 0; /* Make it invisible */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+}
+
+.p-item-1.show {
+    max-height: 500px; /* Large enough to fit all items */
+    opacity: 1; /* Fully visible */
+}
+.p-item-2{
+    max-height: 0; /* Start with the list hidden */
+    overflow: hidden; /* Hide overflowing content */
+    opacity: 0; /* Make it invisible */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+}
+
+.p-item-2.show {
+    max-height: 500px; /* Large enough to fit all items */
+    opacity: 1; /* Fully visible */
+}
+.container-disease .head-disease{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+.container-disease .disease-desc{
+    display: flex;
+    justify-content:flex-start;
+    padding: 20px;
+    font-size: 25px;
+    flex-direction: column;
+}
+.container-disease .disease-desc li{
+    list-style:lower-roman;
+    font-weight: 400;
+}
+#drug{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+.image-container{
+    width:25%;
+    margin: 30px;
+    overflow: hidden;
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.image-container img{
+    width: 100%;
+}
+.image-wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+#photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+#shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .product-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .order-button {
+    font-size: 24px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 100%;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .order-button:active {
+    background-color: #0056b3;
+  }
+  
+  .order-button.completed {
+    background-color: #28a745;
+    content: "✔";
+  }
+  .product-card{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Custom Alert */
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .custom-alert-content {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slide-down 0.4s ease;
+  }
+  
+  .custom-alert-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .close-alert {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-alert:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hidden by default */
+  .hidden {
+    display: none;
+  }
+  
+  /* Slide-down animation */
+  @keyframes slide-down {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

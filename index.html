@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <title>Zentric</title>
+</head>
+<body>
+    <div class="header">
+        <div class="leftSide">
+            <h1>Zentric</h1>
+        </div>
+        <div class="middleSide">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#drug">Drug</a></li>
+                <li><a href="#disease">Disease</a></li>
+                <li><a href="#photos">Photographs</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </div>
+        <div class="rightSide">
+        </div>
+    </div>
+    <section class="home-section" id="#home">
+        <div class="home-image">
+            <img src="images/ZENTRIC (1).png" alt="">
+        </div>
+        <div class="home-text">
+            <h1>Zentric</h1>
+            <h3 class="fade-in-text">Makes Your Stomach Cool</h3>
+        </div>
+    </section>
+    <section id="drug">
+        <div class="container">
+            <hr>
+            <div class="drug-desc">
+                <button class="toggle-button" id="Button-1" onclick="toggleList('Button-1')">Uses</button>
+                <ul class="list-items list-content">
+                <li>1-Short-term treatment (4-8 weeks) of active benign peptic (gastric, duodenal, esophageal) ulcers caused by excessive gastric acid in adults.</li>
+                <li>2-Eradication of H. pylori bacterial infection in combination with antibiotics to treat and reduce recurrence of duodenal ulcers in adults.</li>
+                <li>3-Treatment of gastroesophageal reflux disease (GERD) in adults and pediatric patients (≥ 1 year).</li>
+                <li>4-Treatment of dyspepsia (indigestion), heartburn, and other symptoms associated with GERD in adults and pediatric patients (≥ 1 year).</li>
+                <li>5-Short-term treatment (4-8 weeks) of erosive esophagitis that has been diagnosed by endoscopy in adults and pediatric patients (≥ 1 month)</li>
+                <li>6-Maintain healing (≤ 12 months) of erosive esophagitis in adults and pediatric patients (≥ 1 year).</li>
+                <li>7-Long-term treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome, multiple endocrine adenomas, systemic mastocytosis) in adults.</li>
+                <li>8-Reduce risk of upper gastrointestinal (GI) bleeding in critically ill adult patients.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="drug-desc">
+                <button class="toggle-button" id="Button-2" onclick="toggleList('Button-2')">ContraIndication</button>
+                <p class="p-item-1">Dose: The Recommended Dose Of Zentric 20mg (Omeprazole) Is One Capsule Once Daily</p>
+            </div>
+            <hr>
+            <div class="drug-desc">
+                <button class="toggle-button" id="Button-3" onclick="toggleList('Button-3')">Dose Storage</button>
+                <p class="p-item-2">storage: Store below 25°C. Keep the container tightly closed in order to protect from moisture.</p>
+            </div>
+        </div>
+        <div class="drug-img">
+            <h3 class="toggle-button">Disintegration</h3>
+            <img src="images/disintegration.png" alt="">
+        </div>
+    </section>
+    <section id = "disease">
+        <div class="container-disease">
+            <div class="head-disease">
+                <h1>
+                    Disease
+                </h1>
+            </div>
+            <div class="disease-desc">
+                <h3>
+                    What is peptic ulcer?
+                </h3>
+                <p>A peptic ulcer is a lesion in the mucosal membrane of
+                    the upper GI tract( stomach, duodenum)
+                    Causes:
+                    The common causes of peptic ulcers:
+                    </p>
+                <ul>
+                <li>Bacterial infection with Helicobacter pylori is the cause of 90% of peptic ulcers</li>
+                <li>Use of nonsteroidal anti-inflammatory drugs (prostaglandin inhibitors)</li>
+                <li> blood typeA (common in people with gastric ulcers) and blood typeO (common in those with duodenal ulcers) , genetic factors, exposure to irritants, stress and anxiety, normal aging</li>
+                </ul>
+        <div class="disease-desc">
+            <h3>
+                Pathogenesis:
+            </h3>
+            <p>According to cause</p>
+            <ul>
+            <li> In a peptic ulcer due to H. pylori -H. pylori releases a toxin that destroys the stomach's mucus
+                coat, reducing the epithelium's resistance to acid digestion and
+                causing gastritis and ulcer disease</li>
+            <li>.In a peptic ulcer due to nonsteroidol anti-inflommotory
+                drugs(NSAIDS):
+                -These drugs used mainly as analgesic and anti-inflammatory but one of
+                the side effects is that they inhibit COX1 that produce prostaglandins in
+                stomach which has a role in protection of the stomach wall during
+                digestion.
+            </li>
+            </ul>
+            <ul>
+            <p> Inhibition of prostaglandins causes:</p>
+            <li>Inhibition of the insoluble mucus thot oct as protective barrier</li>
+            <li>Inhibition of NCOs which neutralize acidity of the stomach wall during digestion</li>
+            <li>Decrease blood flow during digestion causing ulcer</li>
+            </ul>
+        </div>
+        <div class="disease-desc">
+            <h3>
+                Complications of peptic ulcer:
+            </h3>
+            <ul>
+            <li> Erosion of the mucosa: This can cause
+                gastrointestinal hemorrhage, which can
+                progress to hypovolemic shock</li>
+            <li>Obstruction of the pylorus due to
+                inflammation and edema</li>
+            </ul>
+        </div>
+        <div class="disease-desc">
+            <h3>
+                Signs and symptoms:
+            </h3>
+            <ul>
+            <li>Loss of weight and appetite</li>
+            <li>Abdominal pain which increased by eating, heartburn, and indigestion</li>
+            <li>The feeling of abdominal fullness</li>
+            <li>Anemia is caused by blood loss so gives Pale skin.</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    </section>
+    <section id="photos">
+        <h1>Photographs</h1>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="images/disintegration.png" alt="">
+                <img src="images/pharmaceutics-14-02725-ag.webp" alt="">
+                <img src="images/ZENTRIC (1).png" alt="">
+                <img src="/images/image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="shop">
+        <h1>Shop</h1>
+        <div class="product-card">
+            <img src="images/ZENTRIC (1).png" alt="Zentric Product" class="product-image">
+            <div class="product-info">
+              <h3>Zentric</h3>
+              <button class="order-button" onclick="placeOrder(this)">+</button>
+            </div>
+            <p>100ج.م</p>
+          </div>
+          <div id="custom-alert" class="custom-alert hidden">
+            <div class="custom-alert-content">
+              <p>Order has been placed successfully!</p>
+              <button class="close-alert" onclick="closeAlert()">OK</button>
+            </div>
+          </div>          
+    </section>
+</body>
+</html>
