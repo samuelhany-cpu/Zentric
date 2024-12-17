@@ -3,6 +3,7 @@
     100% { opacity: 1; }
 }
 @media only screen and (max-width:425px) {
+
     .header {
         width: 100vh;
     }
@@ -24,6 +25,40 @@
     .fade-in-text {
         font-size: 50px;
     }
+    .container{
+        width:50vh;
+        position: relative;
+        left: 10rem;
+    }
+    .drug-img{
+        width:50vh;
+        position: relative;
+        left: 10rem;
+
+    }
+    #disease{
+        width:50vh;
+        position: relative;
+        left: 10rem;
+    }
+    #photos{
+        position: relative;
+        left: 10rem;
+        width: 510px;
+    }
+    .image-container{
+        height: 500px;
+        width: 510px;
+    }
+    .image-wrapper{
+        height: 500px;
+        width: 500px;
+    }
+    #shop{
+        width:50vh;
+        position: relative;
+        left: 15rem;
+    }
 }
 @media only screen and (max-width:768px){
     .header {
@@ -33,7 +68,7 @@
         padding: 10px 5%;
     }
     .home-section .home-image img{
-        width: 50vh;
+        width: 40vh;
     }
     .home-section .home-text{
         width: 50vh;
@@ -44,6 +79,7 @@
     .fade-in-text {
         font-size: 0px;
     }
+   
 }
 
 *{
@@ -241,7 +277,7 @@
     flex-direction: column;
 }
 .image-container{
-    width:25%;
+    width:500px;
     margin: 30px;
     overflow: hidden;
     border: 5px solid #333;
@@ -249,12 +285,12 @@
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .image-container img{
-    width: 100%;
+    width: 510px;
 }
 .image-wrapper{
-    width: 100%;
+    width: 510px;
     display: flex;
-    animation: slide 10s infinite;
+    animation: slide 15s infinite;
 }
 @keyframes slide {
     0%{
@@ -396,4 +432,40 @@
       opacity: 1;
     }
   }
-  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-button {
+    background-color: #ddd;
+    border: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quantity-display {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.confirm-button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}

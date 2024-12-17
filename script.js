@@ -69,3 +69,16 @@ function closeAlert() {
   const alertBox = document.getElementById("custom-alert");
   alertBox.classList.add("hidden");
 }
+function increaseQuantity(button) {
+  const quantityDisplay = button.previousElementSibling;
+  let currentQuantity = parseInt(quantityDisplay.textContent);
+  quantityDisplay.textContent = currentQuantity + 1;
+}
+
+function decreaseQuantity(button) {
+  const quantityDisplay = button.nextElementSibling;
+  let currentQuantity = parseInt(quantityDisplay.textContent);
+  if (currentQuantity > 1) {
+      quantityDisplay.textContent = currentQuantity - 1;
+  }
+}
